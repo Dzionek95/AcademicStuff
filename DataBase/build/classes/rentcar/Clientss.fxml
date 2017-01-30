@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TableView fx:id="myTableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="rentcar.ClientsController">
+  <columns>
+    <TableColumn fx:id="Imie" prefWidth="75.0" text="Imie" />
+    <TableColumn fx:id="Nazwisko" prefWidth="75.0" text="Nazwisko" />
+      <TableColumn fx:id="Ulica" prefWidth="75.0" text="Ulica" />
+      <TableColumn fx:id="Numer" prefWidth="75.0" text="Numer" />
+      <TableColumn fx:id="Miasto" prefWidth="75.0" text="Miasto" />
+      <TableColumn fx:id="PESEL" prefWidth="75.0" text="PESEL" />
+      <TableColumn fx:id="Nr_dowodu" prefWidth="75.0" text="Numer dowodu" />
+      <TableColumn fx:id="Nr_klienta" prefWidth="75.0" text="ID" />
+  </columns>
+</TableView>

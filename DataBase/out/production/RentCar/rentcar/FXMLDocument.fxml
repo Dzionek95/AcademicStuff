@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rentcar.FXMLDocumentController">
+   <center>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleFirstButton" prefHeight="100.0" prefWidth="110.0" text="Wypożycz/Zwróć&#10;Samochód&#10;" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="67.0" top="70.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleSecondButton" prefHeight="100.0" prefWidth="110.0" text="Dodaj/Usuń&#10;Samochód" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="67.0" top="70.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button layoutX="120.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleThirdButton" prefHeight="100.0" prefWidth="110.0" text="Dodaj/Usuń&#10;Samochód&#10;(warsztat)" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="67.0" top="70.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comboView" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="160.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleFourthButton" text="Wyświetl">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

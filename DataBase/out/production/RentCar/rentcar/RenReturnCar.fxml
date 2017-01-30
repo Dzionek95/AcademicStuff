@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rentcar.RenReturnCarController">
+   <center>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="Wypożycz">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="street" layoutX="176.0" layoutY="81.0" />
+                        <TextField fx:id="surname" layoutX="176.0" layoutY="47.0" />
+                        <TextField fx:id="name" layoutX="176.0" layoutY="10.0" />
+                        <TextField fx:id="houseNumber" layoutX="176.0" layoutY="115.0" />
+                        <TextField fx:id="rentDate" layoutX="176.0" layoutY="289.0" />
+                        <TextField fx:id="city" layoutX="176.0" layoutY="148.0" />
+                        <TextField fx:id="peselNumber" layoutX="176.0" layoutY="182.0" />
+                        <TextField fx:id="idNumber" layoutX="176.0" layoutY="217.0" />
+                        <TextField fx:id="carNumber" layoutX="176.0" layoutY="253.0" />
+                        <Label layoutX="52.0" layoutY="293.0" text="Data wypożyczenia:" />
+                        <Label layoutX="52.0" layoutY="51.0" text="Nazwisko:" />
+                        <Label layoutX="52.0" layoutY="14.0" text="Imię:" />
+                        <Label layoutX="52.0" layoutY="85.0" text="Ulica:" />
+                        <Label layoutX="52.0" layoutY="119.0" text="Nr domu:" />
+                        <Label layoutX="52.0" layoutY="152.0" text="Miasto" />
+                        <Label layoutX="52.0" layoutY="186.0" text="PESEL:" />
+                        <Label layoutX="52.0" layoutY="221.0" text="Nr dowodu:" />
+                        <Label layoutX="52.0" layoutY="257.0" text="Nr samochodu:" />
+                        <Button layoutX="438.0" layoutY="123.0" mnemonicParsing="false" onAction="#insertingByButton" prefHeight="100.0" prefWidth="100.0" text="Wypożycz" />
+                        <TextField fx:id="workerNumber" layoutX="176.0" layoutY="323.0" />
+                        <Label layoutX="51.0" layoutY="327.0" text="Nr pracownika:" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Zwróć">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="210.0" layoutY="38.0" text="Nr samochodu:" />
+                        <TextField fx:id="carNumber2" layoutX="328.0" layoutY="34.0" prefHeight="25.0" prefWidth="40.0" />
+                        <Button layoutX="250.0" layoutY="265.0" mnemonicParsing="false" onAction="#returningByButton" prefHeight="57.0" prefWidth="98.0" text="Zwróć" />
+                        <Label layoutX="210.0" layoutY="74.0" text="Nr pracownika:" />
+                        <TextField fx:id="workerNumber2" layoutX="329.0" layoutY="70.0" prefHeight="25.0" prefWidth="40.0" />
+                        <Label layoutX="210.0" layoutY="113.0" prefHeight="17.0" prefWidth="34.0" text="Data:" />
+                        <TextField fx:id="returnDate" layoutX="328.0" layoutY="109.0" prefHeight="25.0" prefWidth="85.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </center>
+</BorderPane>

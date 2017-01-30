@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rentcar.CarRepairController">
+   <center>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="Oddaj do Naprawy">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="carNumber" layoutX="193.0" layoutY="50.0" />
+                        <Label layoutX="69.0" layoutY="54.0" text="Numer samochodu:" />
+                        <Label layoutX="69.0" layoutY="183.0" text="Problem:" />
+                        <Button layoutX="460.0" layoutY="135.0" mnemonicParsing="false" onAction="#addRepair" prefHeight="80.0" prefWidth="104.0" text="Akceptuj" />
+                        <TextArea fx:id="problem" layoutX="174.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Przyjmij z naprawy">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="241.0" layoutY="189.0" mnemonicParsing="false" onAction="#getFromRepair" text="Akceptuj" />
+                        <Label layoutX="73.0" layoutY="97.0" text="Numer przyjmnowanego samochodu:" />
+                        <TextField fx:id="carNumber2" layoutX="299.0" layoutY="93.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </center>
+</BorderPane>
